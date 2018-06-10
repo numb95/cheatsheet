@@ -22,7 +22,3 @@ add more changes to last commit
 
 `git commit --amend` 
 
-زح
-
-
-
