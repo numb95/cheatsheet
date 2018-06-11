@@ -1,7 +1,3 @@
----
-description: Mysql cheatsheet
----
-
 # Mysql
 
 #### install

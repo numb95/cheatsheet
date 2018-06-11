@@ -1,7 +1,3 @@
----
-description: Nginx cheatsheet
----
-
 # Nginx
 
 ### install
