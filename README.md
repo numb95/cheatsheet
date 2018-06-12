@@ -1,5 +1,7 @@
 # Home Page
 
+[![Build Status](https://travis-ci.org/numb95/cheatsheet.svg?branch=master)](https://travis-ci.org/numb95/cheatsheet)
+
 ### Web Servers
 
 1. [Nginx](nginx.md)
