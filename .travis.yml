@@ -3,6 +3,8 @@ before_install:
   - sudo apt-get update -q
   - sudo apt-get install mdcheckr -y
   - sudo apt-get install ruby -y
+  - sudo gem install mdl
+
 script:
   - mdl .
   - find . -name '*.md' -print0 | xargs -0 mdcheckr
