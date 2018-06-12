@@ -1,0 +1,12 @@
+before_install:
+  - sudo add-apt-repository ppa:mike42/mdcheckr -y
+  - sudo apt-get update -q
+  - sudo apt-get install mdcheckr -y
+
+script:
+  - find . -name '*.md' -print0 | xargs -0 mdcheckr
+
+
+after_success:
+
+  - echo "Test Successful. All syntax and links are valid."
