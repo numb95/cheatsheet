@@ -19,3 +19,9 @@
 1. kubernetes
 2. docker
 
+### Statistics and Data Mining tools
+
+1. [R](R.md)
+   1. [Read `csv` file](R.md#Read-csv-file)
+
+
