@@ -2,8 +2,9 @@ before_install:
   - sudo add-apt-repository ppa:mike42/mdcheckr -y
   - sudo apt-get update -q
   - sudo apt-get install mdcheckr -y
-
+  - sudo apt-get install rubygems -y
 script:
+  - mdl .
   - find . -name '*.md' -print0 | xargs -0 mdcheckr
 
 
