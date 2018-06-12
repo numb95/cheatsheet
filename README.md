@@ -24,4 +24,6 @@
 1. [R](R.md)
    1. [Read `csv` file](R.md#Read-csv-file)
 
+### Utilities
 
+1. [Vim](vim.md)
