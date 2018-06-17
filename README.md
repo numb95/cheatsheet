@@ -34,5 +34,5 @@
 
 ### Debian/Ubuntu
 
-1. [apt](https://github.com/numb95/cheatsheet/tree/b4f7f3dda7cd934199f8c9be4d5758dbe0a4fae4/apt.md)
+1. apt
 
