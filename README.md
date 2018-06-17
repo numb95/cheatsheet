@@ -29,3 +29,10 @@
 ### Utilities
 
 1. [Vim](vim.md)
+
+
+### OS Tools
+
+#### Debian/Ubuntu
+
+1. [apt](apt.md)
