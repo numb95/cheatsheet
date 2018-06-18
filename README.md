@@ -34,5 +34,5 @@
 
 ### Debian/Ubuntu
 
-1. apt
+1. [apt](apt.md#apt)
 
