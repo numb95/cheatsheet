@@ -2,6 +2,23 @@
 
 [![Build Status](https://travis-ci.org/numb95/cheatsheet.svg?branch=master)](https://travis-ci.org/numb95/cheatsheet)
 
+A series of usefull cheatsheet
+
+
+##ToDo
+
+[x] migrate from gitbook to something more useful.
+[x] write it own render tools.
+[x] fix CI 
+
+
+
+
+
+
+
+
+
 ## Web Servers
 
 1. [Nginx](nginx.md)
@@ -23,16 +40,16 @@
 
 ## Statistics and Data Mining tools
 
-1. [R](https://github.com/numb95/cheatsheet/tree/b4f7f3dda7cd934199f8c9be4d5758dbe0a4fae4/R.md)
-   1. [Read `csv` file](https://github.com/numb95/cheatsheet/tree/b4f7f3dda7cd934199f8c9be4d5758dbe0a4fae4/R.md#Read-csv-file)
+1. [R](R.md)
+   1. [Read `csv` file](R.md#Read-csv-file)
 
 ## Utilities
 
-1. [Vim](https://github.com/numb95/cheatsheet/tree/b4f7f3dda7cd934199f8c9be4d5758dbe0a4fae4/vim.md)
+1. [Vim](vim.md)
 
 ## OS Tools
 
 ### Debian/Ubuntu
 
-1. [apt](apt.md#apt)
-
+1. [apt](apt.md)
+2. [snap](snap.md)
