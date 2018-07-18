@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.0
+  - 2.5
 before_install:
   - ruby --version
   - gem --version
