@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.5
+  - 2.0
 before_install:
   - sudo add-apt-repository ppa:mike42/mdcheckr -y
   - sudo apt-get update -q
