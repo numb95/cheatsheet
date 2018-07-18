@@ -51,7 +51,64 @@
 
 `mysql -u root -p -h localhost DB_NAME < filename.sql`
 
+#### Create tabale
 
+```
+CREATE [TEMPORARY] TABLE [IF NOT EXISTS] table(
+   key type(size) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+   c1 type(size) NOT NULL,
+   c2 type(size) NULL,
+   ...
+);
+```
+
+#### Add a new column into a table
+
+`ALTER TABLE table ADD [COLUMN];`
+
+#### Drop an existing column in a table
+
+`ALTER TABLE table DROP [COLUMN];`
+
+#### Add index with a specific name to a table on a column
+
+`ALTER TABLE table ADD INDEX [name](column, ...);`
+
+#### Add primary key into a table
+
+`ALTER TABLE table ADD PRIMARY KEY (column,...)`
+
+#### Remove primary key from a table
+
+`ALTER TABLE table DROP PRIMARY KEY`
+
+#### Deleting table structure and data permanently
+
+`DROP TABLE [IF EXISTS] table [, name2, ...] [RESTRICT | CASCADE]`
+
+#### Creating an index with the specified name on a table
+
+`CREATE [UNIQUE|FULLTEXT] INDEX index_name ON table (column,...)`
+
+#### Removing a specified index from table
+
+`DROP INDEX index_name`
+
+#### Query all data from a table
+
+`SELECT * FROM table`
+
+#### Query specified data which is shown in the column list from a table
+
+`SELECT column, column2 FROM table;`
+
+#### Query unique records
+
+`SELECT DISTINCT (column) FROM table;`
+
+#### Query data with a filter using a WHERE clause
+
+`SELECT * FROM table WHERE condition;`
 
 
 
