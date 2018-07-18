@@ -7,7 +7,7 @@ before_install:
   - sudo add-apt-repository ppa:mike42/mdcheckr -y
   - sudo apt-get update -q
   - sudo apt-get install mdcheckr -y
-  - sudo gem install mdl
+  - gem install mdl
 
 script:
   - mdl .
