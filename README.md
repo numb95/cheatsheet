@@ -4,20 +4,9 @@
 
 A series of usefull cheatsheet
 
+## ToDo
 
-##ToDo
-
-[x] migrate from gitbook to something more useful.
-[x] write it own render tools.
-[x] fix CI 
-
-
-
-
-
-
-
-
+\[x\] migrate from gitbook to something more useful. \[x\] write it own render tools. \[x\] fix CI
 
 ## Web Servers
 
@@ -33,23 +22,28 @@ A series of usefull cheatsheet
 
 1. [Mysql](mysql.md)
 
+## Automation
+
+1. [Ansible](ansible.md)
+
 ## DevOps Tools
 
 1. kubernetes
-2. [docker](docker.md)
+2. [docker](https://github.com/numb95/cheatsheet/tree/8afcefef1a1afdca65593f1596f3b5bea898e920/docker.md)
 
 ## Statistics and Data Mining tools
 
-1. [R](R.md)
-   1. [Read `csv` file](R.md#Read-csv-file)
+1. [R](https://github.com/numb95/cheatsheet/tree/8afcefef1a1afdca65593f1596f3b5bea898e920/R.md)
+   1. [Read `csv` file](https://github.com/numb95/cheatsheet/tree/8afcefef1a1afdca65593f1596f3b5bea898e920/R.md#Read-csv-file)
 
 ## Utilities
 
-1. [Vim](vim.md)
+1. [Vim](https://github.com/numb95/cheatsheet/tree/8afcefef1a1afdca65593f1596f3b5bea898e920/vim.md)
 
 ## OS Tools
 
 ### Debian/Ubuntu
 
 1. [apt](apt.md)
-2. [snap](snap.md)
+2. [snap](https://github.com/numb95/cheatsheet/tree/8afcefef1a1afdca65593f1596f3b5bea898e920/snap.md)
+

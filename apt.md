@@ -1,7 +1,5 @@
 # apt
 
-
-
 * install only security updates
 
 `sudo unattended-upgrade -d`
