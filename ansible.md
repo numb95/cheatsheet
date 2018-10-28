@@ -447,6 +447,33 @@ mkdir -p roles/common/{tasks,handlers,templates,files,vars,defaults,meta}
 touch roles/common/{tasks,handlers,templates,files,vars,defaults,meta}/main.yml
 ```
 
+secret vault
+
+inventory example
+
+\[servers:vars\]
+
+```yaml
+ansible_user=numb
+ansible_become=yes
+ansible_become_method=sudo 
+ansible_become_pass='{{ server_pass }}'
+```
+
+create a new encripted secret file
+
+`ansible-vault create passwords.yml`
+
+after adding password for file add this to the opened file
+
+```
+server_pass: PASSWORD
+```
+
+then run the ansible
+
+`ansible-playbook -i inventory --ask-vault-pass --extra-vars '@passwords.yml' ansible.yml`
+
 TODO
 
 write about roles structure, templates, groups, helpers, bash module, docker module, python module, diff, optimizing.
