@@ -19,7 +19,7 @@ ansible-lint playbook.yaml
 Check if the server is running:
 
 ```bash
-$ ansible all -i hostname, -m ping
+ansible all -i hostname, -m ping
 ```
 
 Expected output:
@@ -34,10 +34,12 @@ hostname | SUCCESS => {
 Run command on host:
 
 ```bash
-$ ansible all -i hostname, -m shell -a 'echo hello world'
+ansible all -i hostname, -m shell -a 'echo hello world'
 ```
 
-Playbook file should name something like `FILENAME.yaml` but it's better to describe the name of the file base on the task of that file like `apache.yaml`.
+Playbook file should name something like `FILENAME.yaml`.
+
+it's better to describe the name of the file base on the task of that file like `apache.yaml`.
 
 {% code-tabs %}
 {% code-tabs-item title="apache.yaml" %}
@@ -60,16 +62,17 @@ Playbook file should name something like `FILENAME.yaml` but it's better to desc
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Run the playbook:
+
+Run the playbook:
 
 ```bash
-$ ansible-playbook -i hostname, apache.yaml
+ansible-playbook -i hostname, apache.yaml
 ```
 
 Show all configs and variables of a host:
 
 ```bash
-$ ansible all -i hostname, -m setup
+ansible all -i hostname, -m setup
 ```
 
 Using Ansible setup variable:
@@ -135,7 +138,8 @@ Another way:
 - hosts: all
   remote_user: root
   tasks:
-  - name: Install Apache2 on server
+  - name: Install Apache2 on se
+rver
     yum:
       name: httpd
       name: "{{ pkg1 }}"
@@ -181,7 +185,8 @@ upgrade a package
 - hosts: all
   remote_user: root
   tasks:
-  - name: Install Apache2 on server
+  - name: Install Apache2 on s
+erver
     yum:
       name: httpd
       state: latest
@@ -209,7 +214,7 @@ Or upgrade all:
 to list all tasks:
 
 ```text
-$ ansible-playbook taskname.yaml --list-tasks 
+ansible-playbook taskname.yaml --list-tasks 
 
 ```
 
@@ -217,8 +222,9 @@ Generating static files using jinja2 and ansible
 
 {% code-tabs %}
 {% code-tabs-item title="jinja.yaml" %}
+
 ```yaml
----
+---
 - hosts: all
   remote_user: root
   tasks:
@@ -302,7 +308,8 @@ Sample of a playbook which only run tasks on webserver group
 for running:
 
 ```text
-$ ansible-playbook -i hostname.txt, apache2.yaml
+ansible-playbook -i hostname.txt, apache2.yaml
+
 ```
 
 In this section, I decided to write more about variables. but i think i should refer you to the [Official Documents](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html).
@@ -477,4 +484,3 @@ then run the ansible
 TODO
 
 write about roles structure, templates, groups, helpers, bash module, docker module, python module, diff, optimizing.
-
