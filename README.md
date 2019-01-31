@@ -29,7 +29,7 @@ A series of usefull cheatsheet
 ## DevOps Tools
 
 1. kubernetes
-2. [docker](https://github.com/numb95/cheatsheet/tree/8afcefef1a1afdca65593f1596f3b5bea898e920/docker.md)
+2. docker
 
 ## Statistics and Data Mining tools
 

@@ -62,7 +62,6 @@ it's better to describe the name of the file base on the task of that file like 
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-
 Run the playbook:
 
 ```bash
@@ -98,7 +97,6 @@ TASK [debugging from setup] ****************************************************
 ok: [centosvm] => {
     "msg": "OS version is 'CentOS' 'RedHat' with IP: '['192.168.43.111', '192.168.43.64']'"
 }
-
 ```
 
 Inline var:
@@ -214,15 +212,13 @@ Or upgrade all:
 to list all tasks:
 
 ```text
-ansible-playbook taskname.yaml --list-tasks 
-
+ansible-playbook taskname.yaml --list-tasks
 ```
 
 Generating static files using jinja2 and ansible
 
 {% code-tabs %}
 {% code-tabs-item title="jinja.yaml" %}
-
 ```yaml
 ---
 - hosts: all
@@ -235,7 +231,6 @@ Generating static files using jinja2 and ansible
       owner: root
       group: root
       mode: 0644
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -253,7 +248,6 @@ Generating static files using jinja2 and ansible
 {% endif %}
 </body>
 </html>
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -277,7 +271,6 @@ ex2.sample.com
 
 [database]
 db.sample.com
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -309,12 +302,11 @@ for running:
 
 ```text
 ansible-playbook -i hostname.txt, apache2.yaml
-
 ```
 
 In this section, I decided to write more about variables. but i think i should refer you to the [Official Documents](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html).
 
-please note that you should also read the documents of ansible for each modules's variable for better performance. 
+please note that you should also read the documents of ansible for each modules's variable for better performance.
 
 for working with iteration use `with_items`
 
@@ -333,8 +325,7 @@ for working with iteration use `with_items`
     - vim
     - sqlite
     - openjdk-jre
-    - docker 
-
+    - docker
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -375,7 +366,6 @@ other method. make a backup of a file/directory
      with_nested:
      - '{{ dirs }}'
      - '{{ users }}'
-       
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -430,7 +420,7 @@ condition could be look like this:
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Boolean  condition
+Boolean condition
 
 ```text
 ---
@@ -473,7 +463,7 @@ create a new encripted secret file
 
 after adding password for file add this to the opened file
 
-```
+```text
 server_pass: PASSWORD
 ```
 
@@ -484,3 +474,4 @@ then run the ansible
 TODO
 
 write about roles structure, templates, groups, helpers, bash module, docker module, python module, diff, optimizing.
+
