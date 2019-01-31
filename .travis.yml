@@ -2,17 +2,10 @@ language: ruby
 rvm:
   - 2.5
 before_install:
-  - ruby --version
-  - gem --version
-  - sudo add-apt-repository ppa:mike42/mdcheckr -y
-  - sudo apt-get update -q
-  - sudo apt-get install mdcheckr -y
   - gem install mdl
 
 script:
   - mdl .
-  - find . -name '*.md' -print0 | xargs -0 mdcheckr
-
 
 after_success:
 
